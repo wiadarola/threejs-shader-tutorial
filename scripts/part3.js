@@ -35,7 +35,7 @@ function init() {
     geometry.setAttribute( 'offset', new THREE.InstancedBufferAttribute( offset, 1 ) );
     
     const loader = new THREE.TextureLoader()
-    const texture = loader.load('./textures/atlasBox.PNG')
+    const texture = loader.load('../textures/atlasBox.PNG')
     const material = new THREE.MeshBasicMaterial( { map: texture, transparent: true, } );
     
     material.onBeforeCompile = function ( shader ) {
