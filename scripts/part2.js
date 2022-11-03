@@ -27,7 +27,7 @@ function init() {
     const geometry = new THREE.PlaneGeometry( 100, 100 );
 
     const loader = new THREE.TextureLoader()
-    const material = new THREE.MeshBasicMaterial( { map: loader.load('../textures/white.png'), transparent: true, } );
+    const material = new THREE.MeshBasicMaterial( { map: loader.load('./textures/white.png'), transparent: true, } );
     mesh = new THREE.InstancedMesh( geometry, material, COUNT );
 
     for( let i = 0; i < COUNT; i++ ) {
